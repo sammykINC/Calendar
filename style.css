@@ -1,0 +1,61 @@
+:root {
+  --darkBlue: #20205b;
+  --darkRed: #1d0000;
+  --brightRed: #f4351e;
+  --light: #fff;
+  --dark: #000;
+  --body_bg: linear-gradient(45deg, #1d0000, #20205b);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  background-image: var(--body_bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}
+
+.calendar {
+  width: 300px;
+  height: 200px;
+  background-color: var(--light);
+  display: flex;
+  align-items: center;
+  border-radius: 16px;
+  border: 5px rgb(255, 255, 255) solid;
+}
+
+.cal_left, .cal_right {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  flex-direction: column;
+}
+
+.cal_right {
+  width: 42%;
+  border-radius: 0 10px 10px 0;
+  background-color: var(--brightRed);
+  color:var(--light);
+}
+
+.cal_left {
+  width: 58%;
+  border-radius: 10px 0 0 10px;
+}
+
+.calDay {
+  font-size: 100px;
+  line-height: 90px;
+}
